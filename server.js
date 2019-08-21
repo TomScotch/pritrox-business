@@ -34,7 +34,9 @@ app.get('/webstores', function(request, response) {
 app.get('/business', function(request, response) {
   response.sendFile(__dirname + '/views/business.html');
 });
-
+app.get('/ideas', function(request, response) {
+  response.sendFile(__dirname + '/views/ideas.html');
+});
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
