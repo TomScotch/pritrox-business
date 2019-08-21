@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<title>Pritrox-Company</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
+
+  .w3-tag,
+  .fa {
+    cursor: pointer
+  }
+
+  .w3-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px
+  }
+</style>
+<html>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-large w3-light-grey">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#service" class="w3-button w3-block">Leistungen</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block">Über uns</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#contact" class="w3-button w3-block">Kontakt</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+    <!-- Slideshow -->
+    <div class="w3-container">
+
+      <div class="w3-display-container mySlides">
+        <a href="/julian">
+          <img src="images/company.png" style="width:100%">
+        </a>
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-opacity w3-padding-large w3-animate-bottom">Willkommen</span>
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <a href="/software">
+          <img src="images/software-engineering.png" style="width:100%">
+        </a>
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-opacity w3-padding-large w3-animate-bottom">Softwareentwicklung</span>
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <a href="/system">
+          <img src="images/system-integration.png" style="width:100%">
+        </a>
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-opacity-max w3-padding-large w3-animate-bottom">System Integration</span>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <a href="/webstores">
+          <img src="images/pritrox.png" style="width:100%">
+        </a>
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-opacity-max w3-padding-large w3-animate-bottom">Webstores</span>
+        </div>
+      </div>
+    </div>
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row w3-container" id="service">
+
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Unsere Leistungen</span>
+    </div>
+
+    <div class="w3-col l4 m6 w3-light-grey w3-container w3-padding-16">
+      <h3><a href="/webstores">Webstores</a></h3>
+      <p>Werfen Sie einen Blick</p>
+      <p>auf unser ständig erweitertes</p>
+      <p>Angebot hochwertiger Erzeugnisse.</p>
+    </div>
+
+    <div class="w3-col l4 m6 w3-grey w3-container w3-padding-16">
+      <center>
+        <h3><a href="/system">System-Integration</a></h3>
+        <p>Wir bieten Netzwerk-</p>
+        <p>Design,Sicherheit,Monitoring</p>
+        <p>Analyse,Optimierung,Erweiterung</p>
+      </center>
+    </div>
+
+    <div class="w3-col l4 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3><a href="/software">Softwareentwicklung</a></h3>
+      <p>Sie haben eine Vision, wir realisieren sie.</p>
+      <p>Ganz egal ob Sie eine Webpräsenz benötigen</p>
+      <p>oder eine eigens auf Ihre Bedürfnisse abgestimmte Software</p>
+    </div>
+
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Das Team</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <a href="/julian">
+          <img src="images/jh.png" alt="Julian" style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Julian Hesse</h3>
+          <p class="w3-opacity">Geschäftsführer</p>
+          <p>info@pritrox.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <a href="/system">
+          <img src="images/al.png" alt="Jane" style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Andreas Lauter</h3>
+          <p class="w3-opacity">IT-Systemelektroniker</p>
+          <p class="w3-opacity">Microsoft Certified System Administrator</p>
+          <p class="w3-opacity">Staatlich geprüfter Techniker Elektrotechnik</p>
+          <p>andi@it.pritrox.com</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <a href="/software">
+          <img src="images/th.png" alt="Jane" style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Thomas Hartwig</h3>
+          <p class="w3-opacity">Fachinformatiker für Anwendungsentwicklung</p>
+          <p>tom@it.pritrox.com</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Kontakt</span>
+  </div>
+
+  <form class="w3-container">
+    <center>
+      <div class="w3-section">
+        <label>Telefon:</label><br>
+        <b>020958905970</b>
+      </div>
+      <div class="w3-section">
+        <label>Telefax:</label><br>
+        <b>020958905971</b>
+      </div>
+      <div class="w3-section">
+        <label>Email:</label><br>
+        <b>info@pritrox.com</b>
+      </div>
+      <div class="w3-section">
+        <label>Adresse:</label><br>
+        <b>Am Stadtgarten 1</b><br>
+        <b>45879 Gelsenkirchen</b>
+      </div>
+    </center>
+  </form>
+
+  <!-- Footer -->
+
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>nach Oben</a>
+    <div class="w3-xlarge w3-section">
+      <img src="images/logo.png" style="width:15%">
+      <p>Powered by Pritrox Software</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+  </script>
+
+</body>
+
+</html>
