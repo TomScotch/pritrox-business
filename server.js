@@ -37,7 +37,9 @@ app.get('/business', function(request, response) {
 app.get('/ideas', function(request, response) {
   response.sendFile(__dirname + '/views/ideas.html');
 });
-
+app.get('/carousel', function(request, response) {
+  response.sendFile(__dirname + '/views/carousel.html');
+});
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
