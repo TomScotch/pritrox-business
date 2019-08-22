@@ -13,9 +13,8 @@ app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/carousel.html');
+  response.sendFile(__dirname + '/views/index.html');
 });
-
 app.get('/home', function(request, response) {
   response.sendFile(__dirname + '/views/home.html');
 });
@@ -39,6 +38,34 @@ app.get('/ideas', function(request, response) {
 });
 app.get('/carousel', function(request, response) {
   response.sendFile(__dirname + '/views/carousel.html');
+});
+
+app.get('/about-us', function(request, response) {
+  response.sendFile(__dirname + '/views/about-us.html');
+});
+app.get('/blog-post', function(request, response) {
+  response.sendFile(__dirname + '/views/blog-post.html');
+});
+app.get('/blog', function(request, response) {
+  response.sendFile(__dirname + '/views/blog.html');
+});
+app.get('/contact-us', function(request, response) {
+  response.sendFile(__dirname + '/views/contact-us.html');
+});
+app.get('/full-width', function(request, response) {
+  response.sendFile(__dirname + '/views/full-width.html');
+});
+app.get('/portfolio-item', function(request, response) {
+  response.sendFile(__dirname + '/views/portfolio-item.html');
+});
+app.get('/portfolio', function(request, response) {
+  response.sendFile(__dirname + '/views/portfolio.html');
+});
+app.get('/services', function(request, response) {
+  response.sendFile(__dirname + '/views/services.html');
+});
+app.get('/pritrox', function(request, response) {
+  response.sendFile(__dirname + '/views/pritrox.html');
 });
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
